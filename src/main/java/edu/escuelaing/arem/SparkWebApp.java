@@ -5,6 +5,7 @@
  */
 package edu.escuelaing.arem;
 
+import java.util.Arrays;
 import static spark.Spark.*;
 import spark.Request;
 import spark.Response;
