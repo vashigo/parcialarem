@@ -62,12 +62,18 @@ public class SparkWebApp {
         int minimo = min(coll1);
         int sumatoria = sum(coll1);
         int multiplicatoria = mult(coll1);
-        String resultadoJsonLista =" "+convertStringlist(coll1);
-        String resultadoJsonMaximo =" "+maximo;
-        String resultadoJsonMinimo =" "+minimo;
-        String resultadoJsonSumatoria =" "+sumatoria;
-        String resultadoJsonMultiplicatoria =" "+multiplicatoria;
+        String resultadoJsonLista =""+convertStringlist(coll1);
+        String resultadoJsonMaximo =""+maximo;
+        String resultadoJsonMinimo =""+minimo;
+        String resultadoJsonSumatoria =""+sumatoria;
+        String resultadoJsonMultiplicatoria =""+multiplicatoria;
         
+        String response = "\"response\":{ " +
+                "\"list\": " + resultadoJsonLista + "," +
+                "\"max\":" + resultadoJsonMaximo + "," +
+                "\"min\":" + resultadoJsonMinimo + "," +
+                "\"sum\":" + resultadoJsonSumatoria + "," +
+                "\"mult\":" + resultadoJsonMultiplicatoria + "}";
         
         if (col1.length > 0){
             pageContent
@@ -76,12 +82,7 @@ public class SparkWebApp {
             + "<body>"
             + "<h2>Los resultados son:</h2>"
             + "<h3 style=\"color:red;\">Columna 1:</h3>"
-            + "<h4>"+"LISTA:"+"  "+resultadoJsonLista+"</h4>"
-            + "<h4>"+"Maximo:"+"  "+resultadoJsonMaximo+"</h4>"
-            + "<h4>"+"Minimo:"+"  "+resultadoJsonMinimo+"</h4>"
-            + "<h4>"+"LISTA:"+"  "+resultadoJsonSumatoria+"</h4>"
-            + "<h4>"+"LISTA:"+"  "+resultadoJsonMultiplicatoria+"</h4>";
-
+            + "<h4>"+"JSON:"+"  "+response+"</h4>";
         }else{
             pageContent="error: columna 1 esta vacia";
         }
