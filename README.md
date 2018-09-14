@@ -13,7 +13,7 @@ numbers implemented with  Java, Maven,spark, GITHUB y Heroku
 
 Copie el proyecto via git clone en cualquier diretorio para empezar a trabajar:
 ```
-git clone https://github.com/vashigo/Tarea-1-MVNGit.git
+git clone https://github.com/vashigo/parcialarem.git
 ```
 
 ### Prerequisitos
