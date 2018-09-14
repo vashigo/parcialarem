@@ -1,4 +1,4 @@
-# TAREA 2 AREM (Introduccion a heroku)
+# PARCIAL PRACTICO 1 AREM
 
 Este es un trabajo de uso academico. This is a program to calculate the mean and standard deviation of a set of n real
 numbers implemented with  Java, Maven,spark, GITHUB y Heroku
