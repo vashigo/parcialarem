@@ -61,11 +61,11 @@ public class SparkWebApp {
         int minimo = min(coll1);
         int sumatoria = sum(coll1);
         int multiplicatoria = mult(coll1);
-        String resultadoJsonLista ="lista"+" "+convertStringlist(coll1);
-        String resultadoJsonMaximo ="lista"+" "+maximo;
-        String resultadoJsonMinimo ="lista"+" "+minimo;
-        String resultadoJsonSumatoria ="lista"+" "+sumatoria;
-        String resultadoJsonMultiplicatoria ="lista"+" "+multiplicatoria;
+        String resultadoJsonLista =" "+convertStringlist(coll1);
+        String resultadoJsonMaximo =" "+maximo;
+        String resultadoJsonMinimo =" "+minimo;
+        String resultadoJsonSumatoria =" "+sumatoria;
+        String resultadoJsonMultiplicatoria =" "+multiplicatoria;
         
         
         if (col1.length > 0){
@@ -142,12 +142,10 @@ public class SparkWebApp {
      * Método que calcula la sumatoria en una lista
      */ 
     private static String convertStringlist(int list[]) {
-        String lista="";
-        for ( int i = 0; i < list.length; i++ ){
-            lista = list+" "+String.valueOf(list[i]);
-            
-        }
-        return lista;
+        String res="";
+        res = Arrays.toString(list);
+
+        return res;
     }   
 
     /**
