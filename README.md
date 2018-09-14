@@ -3,6 +3,12 @@
 Este es un trabajo de uso academico. This is a program to calculate the mean and standard deviation of a set of n real
 numbers implemented with  Java, Maven,spark, GITHUB y Heroku
 
+
+## HEROKU
+
+[Link HEROKU](https://parcialarem1.herokuapp.com/inputdata)
+
+
 ## EMPEZAR
 
 Copie el proyecto via git clone en cualquier diretorio para empezar a trabajar:
